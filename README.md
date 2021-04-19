@@ -8,6 +8,12 @@ Build OpenWrt using GitHub Actions
 
 [Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
+## 分支说明
+
+- main, 源于upstream的配置, 改用lede-17.01源
+- bypass, 在main的基础上引入[garypang13/openwrt-packages](https://github.com/garypang13/openwrt-packages)源, 其中的Bypass插件确实好用
+- lienol, [Lienol-19.07分支](https://github.com/Lienol/openwrt)+[garypang13/openwrt-packages](https://github.com/garypang13/openwrt-packages)的Bypass
+
 ## Usage
 
 - Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
