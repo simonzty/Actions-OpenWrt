@@ -10,7 +10,7 @@ Build OpenWrt using GitHub Actions
 
 ## 分支说明
 
-- [main](https://github.com/lon91ong/Actions-OpenWrt/tree/main), 源于upstream的配置, 改用[lede-17.01源](https://github.com/coolsnowwolf/openwrt/tree/lede-17.01)
+- [main](https://github.com/lon91ong/Actions-OpenWrt/tree/main), 源于[upstream](https://github.com/gooduc/Actions-OpenWrt-PSG1218)的配置, 改用[lede-17.01源](https://github.com/coolsnowwolf/openwrt/tree/lede-17.01)
 - [bypass](https://github.com/lon91ong/Actions-OpenWrt/tree/bypass), 在main的基础上引入[garypang13/openwrt-packages](https://github.com/garypang13/openwrt-packages)源, 其中的Bypass插件确实好用
 - [lienol(暂时放弃)](https://github.com/lon91ong/Actions-OpenWrt/tree/lienol-19.07), [Lienol-19.07源](https://github.com/Lienol/openwrt)+[garypang13/openwrt-packages](https://github.com/garypang13/openwrt-packages)的Bypass
 
