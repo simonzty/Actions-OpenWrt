@@ -49,6 +49,6 @@ sed -i 's/^[ \t]*//g' ./target/linux/ramips/image/mt7621.mk
 #sed -i 's/16064k/32448k/g' target/linux/ramips/image/mt7621.mk
 
 # 默认turboacc开启DNS Caching功能
-sed -i -r "s/(dns_caching )'0'/\1'1'/1" package/feeds/custom/luci-app-turboacc/root/etc/config/turboacc 
+#sed -i -r "s/(dns_caching )'0'/\1'1'/1" package/feeds/custom/luci-app-turboacc/root/etc/config/turboacc 
 # custom插件汉化
 mv package/feeds/custom/luci-app-turboacc/po/zh_Hans package/feeds/custom/luci-app-turboacc/po/zh-cn
