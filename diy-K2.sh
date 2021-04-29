@@ -27,6 +27,9 @@ sed -i 's/7872k/16064k/g' target/linux/ramips/image/mt7620.mk
 # 修改默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
+rm -rf package/feeds/custom/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/feeds/custom/luci-theme-argon
+
 # 默认turboacc开启DNS Caching功能
 #sed -i -r "s/(dns_caching )'0'/\1'1'/1" package/feeds/custom/luci-app-turboacc/root/etc/config/turboacc
 # 修复DHCP服务, 从5.4内核改回4.14内核的resolv.conf路径
