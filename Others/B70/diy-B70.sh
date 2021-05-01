@@ -39,6 +39,10 @@ cat >> ./target/linux/ramips/image/mt7621.mk <<EOF
 define Device/hiwifi_hc5962-spi
   $(Device/uimage-lzma-loader)
   IMAGE_SIZE := 16064k
+  IMAGES += factory.bin
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+  IMAGE/factory.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-ubi | \
+	check-size $$$$(IMAGE_SIZE)
   DEVICE_VENDOR := HiWiFi
   DEVICE_MODEL := HC5962-SPI
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 wpad-openssl
