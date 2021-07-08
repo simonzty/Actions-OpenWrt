@@ -81,7 +81,7 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $DTS_FILE ] && mv -f $DTS_FILE openwrt/target/linux/ramips/dts/HC5962-SPI.dts
-        cp -f others/common.conf .config
+        cp -f Others/common.conf .config
         echo >> .config
         cat $CONFIG_FILE >> .config
         chmod +x $DIY_P2_SH
